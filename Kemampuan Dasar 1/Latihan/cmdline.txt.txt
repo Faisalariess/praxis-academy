@@ -1,0 +1,535 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+1. C:\Users\semuthitam>net
+The syntax of this command is:
+
+NET
+    [ ACCOUNTS | COMPUTER | CONFIG | CONTINUE | FILE | GROUP | HELP |
+      HELPMSG | LOCALGROUP | PAUSE | SESSION | SHARE | START |
+      STATISTICS | STOP | TIME | USE | USER | VIEW ]
+
+C:\Users\semuthitam>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wireless Network Connection:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::f8bf:4896:c856:512b%12
+   IPv4 Address. . . . . . . . . . . : 192.168.43.244
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.43.1
+
+Ethernet adapter Local Area Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Tunnel adapter isatap.{0354F266-D6F2-425B-94B5-88B40164F79E}:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Tunnel adapter Teredo Tunneling Pseudo-Interface:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+
+================
+2.C:\Users\semuthitam>ping
+
+Usage: ping [-t] [-a] [-n count] [-l size] [-f] [-i TTL] [-v TOS]
+            [-r count] [-s count] [[-j host-list] | [-k host-list]]
+            [-w timeout] [-R] [-S srcaddr] [-4] [-6] target_name
+
+Options:
+    -t             Ping the specified host until stopped.
+                   To see statistics and continue - type Control-Break;
+                   To stop - type Control-C.
+    -a             Resolve addresses to hostnames.
+    -n count       Number of echo requests to send.
+    -l size        Send buffer size.
+    -f             Set Don't Fragment flag in packet (IPv4-only).
+    -i TTL         Time To Live.
+    -v TOS         Type Of Service (IPv4-only. This setting has been deprecated
+                   and has no effect on the type of service field in the IP Head
+er).
+    -r count       Record route for count hops (IPv4-only).
+    -s count       Timestamp for count hops (IPv4-only).
+    -j host-list   Loose source route along host-list (IPv4-only).
+    -k host-list   Strict source route along host-list (IPv4-only).
+    -w timeout     Timeout in milliseconds to wait for each reply.
+    -R             Use routing header to test reverse route also (IPv6-only).
+    -S srcaddr     Source address to use.
+    -4             Force using IPv4.
+    -6             Force using IPv6.
+
+================
+3. C:\Users\semuthitam>ping 192.168.43.244
+
+Pinging 192.168.43.244 with 32 bytes of data:
+Reply from 192.168.43.244: bytes=32 time<1ms TTL=128
+Reply from 192.168.43.244: bytes=32 time<1ms TTL=128
+Reply from 192.168.43.244: bytes=32 time<1ms TTL=128
+Reply from 192.168.43.244: bytes=32 time<1ms TTL=128
+
+Ping statistics for 192.168.43.244:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+
+================
+4. C:\Users\semuthitam>ping 192.168.43.244
+
+Pinging 192.168.43.244 with 32 bytes of data:
+Reply from 192.168.43.244: bytes=32 time<1ms TTL=128
+Reply from 192.168.43.244: bytes=32 time<1ms TTL=128
+Reply from 192.168.43.244: bytes=32 time<1ms TTL=128
+Reply from 192.168.43.244: bytes=32 time<1ms TTL=128
+
+Ping statistics for 192.168.43.244:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+
+================
+5. C:\Users\semuthitam>mrinfo
+There was no address specified
+
+
+Usage: mrinfo [-n?] [-i address] [-t secs] [-r retries] destination
+
+ -n           Display IP addresses in numeric format
+ -i address   Address of local interface to send query out
+ -t seconds   Timeout in seconds for IGMP queries (default = 3 seconds)
+ -r retries   Number of extra times to send the SNMP queries (default = 0)
+
+ -?           Print Usage
+ destination  Address or name of destination
+
+
+================
+6. C:\Users\semuthitam>hostname
+semuthitam-PC
+
+C:\Users\semuthitam>label
+Volume in drive C: has no label
+Volume Serial Number is 4E5D-57D4
+Volume label (32 characters, ENTER for none)?
+
+
+================
+7. C:\Users\semuthitam>netsh
+netsh>
+netsh>?
+
+The following commands are available:
+
+Commands in this context:
+..             - Goes up one context level.
+?              - Displays a list of commands.
+abort          - Discards changes made while in offline mode.
+add            - Adds a configuration entry to a list of entries.
+advfirewall    - Changes to the `netsh advfirewall' context.
+alias          - Adds an alias.
+branchcache    - Changes to the `netsh branchcache' context.
+bridge         - Changes to the `netsh bridge' context.
+bye            - Exits the program.
+commit         - Commits changes made while in offline mode.
+delete         - Deletes a configuration entry from a list of entries.
+dhcpclient     - Changes to the `netsh dhcpclient' context.
+dnsclient      - Changes to the `netsh dnsclient' context.
+dump           - Displays a configuration script.
+exec           - Runs a script file.
+exit           - Exits the program.
+firewall       - Changes to the `netsh firewall' context.
+help           - Displays a list of commands.
+http           - Changes to the `netsh http' context.
+interface      - Changes to the `netsh interface' context.
+ipsec          - Changes to the `netsh ipsec' context.
+lan            - Changes to the `netsh lan' context.
+mbn            - Changes to the `netsh mbn' context.
+namespace      - Changes to the `netsh namespace' context.
+nap            - Changes to the `netsh nap' context.
+netio          - Changes to the `netsh netio' context.
+offline        - Sets the current mode to offline.
+online         - Sets the current mode to online.
+p2p            - Changes to the `netsh p2p' context.
+popd           - Pops a context from the stack.
+pushd          - Pushes current context on stack.
+quit           - Exits the program.
+ras            - Changes to the `netsh ras' context.
+rpc            - Changes to the `netsh rpc' context.
+set            - Updates configuration settings.
+show           - Displays information.
+trace          - Changes to the `netsh trace' context.
+unalias        - Deletes an alias.
+wcn            - Changes to the `netsh wcn' context.
+wfp            - Changes to the `netsh wfp' context.
+winhttp        - Changes to the `netsh winhttp' context.
+winsock        - Changes to the `netsh winsock' context.
+wlan           - Changes to the `netsh wlan' context.
+
+The following sub-contexts are available:
+ advfirewall branchcache bridge dhcpclient dnsclient firewall http interface ips
+ec lan mbn namespace nap netio p2p ras rpc trace wcn wfp winhttp winsock wlan
+
+To view help for a command, type the command, followed by a space, and then
+ type ?.
+
+netsh>exit
+
+
+================
+8. C:\Users\semuthitam>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 4E5D-57D4
+
+ Directory of C:\Users\semuthitam
+
+01/23/2021  03:18 PM    <DIR>          .
+01/23/2021  03:18 PM    <DIR>          ..
+08/16/2020  09:43 AM    <DIR>          .android
+07/14/2020  09:36 AM    <DIR>          .AndroidStudio3.0
+07/14/2020  09:56 AM    <DIR>          .gradle
+01/12/2021  01:31 PM    <DIR>          .nbi
+09/07/2020  05:46 PM    <DIR>          .oracle_jre_usage
+01/23/2021  09:39 AM    <DIR>          .vscode
+09/18/2020  02:13 PM    <DIR>          AndroidStudioProjects
+06/27/2020  02:17 PM    <DIR>          Contacts
+08/16/2020  11:05 AM               296 d4ac4633ebd6440fa397b84f1bc94a3c.7z
+01/23/2021  09:38 AM    <DIR>          Desktop
+01/14/2021  01:59 PM    <DIR>          Documents
+01/23/2021  12:04 PM    <DIR>          Downloads
+06/27/2020  02:17 PM    <DIR>          Favorites
+09/04/2020  11:44 AM    <DIR>          IdeaProjects
+08/16/2020  09:34 AM                66 inittk.ini
+08/16/2020  09:42 AM                41 inst.ini
+01/23/2021  03:18 PM                 0 ipconfig
+08/19/2020  07:17 PM    <DIR>          Links
+06/27/2020  02:17 PM    <DIR>          Music
+01/23/2021  03:18 PM                 0 net
+08/16/2020  09:34 AM    <DIR>          Nox_share
+08/16/2020  09:34 AM                45 nuuid.ini
+10/16/2020  09:36 PM    <DIR>          Pictures
+06/27/2020  02:30 PM    <DIR>          Saved Games
+07/10/2020  10:34 AM    <DIR>          Searches
+08/16/2020  09:34 AM                53 useruid.ini
+06/27/2020  02:17 PM    <DIR>          Videos
+07/26/2020  01:54 PM    <DIR>          visual project
+08/16/2020  09:42 AM    <DIR>          vmlogs
+               7 File(s)            501 bytes
+              24 Dir(s)  16,255,541,248 bytes free
+
+
+
+================
+9. C:\Users\semuthitam>cls
+
+
+================
+10. C:\Users\semuthitam>nslookup
+Default Server:  UnKnown
+Address:  192.168.43.1
+
+> exit
+
+
+================
+11. C:\Users\semuthitam>msinfo32 /showcategories
+
+
+================
+12. C:\Users\semuthitam>help
+For more information on a specific command, type HELP command-name
+ASSOC          Displays or modifies file extension associations.
+ATTRIB         Displays or changes file attributes.
+BREAK          Sets or clears extended CTRL+C checking.
+BCDEDIT        Sets properties in boot database to control boot loading.
+CACLS          Displays or modifies access control lists (ACLs) of files.
+CALL           Calls one batch program from another.
+CD             Displays the name of or changes the current directory.
+CHCP           Displays or sets the active code page number.
+CHDIR          Displays the name of or changes the current directory.
+CHKDSK         Checks a disk and displays a status report.
+CHKNTFS        Displays or modifies the checking of disk at boot time.
+CLS            Clears the screen.
+CMD            Starts a new instance of the Windows command interpreter.
+COLOR          Sets the default console foreground and background colors.
+COMP           Compares the contents of two files or sets of files.
+COMPACT        Displays or alters the compression of files on NTFS partitions.
+CONVERT        Converts FAT volumes to NTFS.  You cannot convert the
+               current drive.
+COPY           Copies one or more files to another location.
+DATE           Displays or sets the date.
+DEL            Deletes one or more files.
+DIR            Displays a list of files and subdirectories in a directory.
+DISKCOMP       Compares the contents of two floppy disks.
+DISKCOPY       Copies the contents of one floppy disk to another.
+DISKPART       Displays or configures Disk Partition properties.
+DOSKEY         Edits command lines, recalls Windows commands, and
+               creates macros.
+DRIVERQUERY    Displays current device driver status and properties.
+ECHO           Displays messages, or turns command echoing on or off.
+ENDLOCAL       Ends localization of environment changes in a batch file.
+ERASE          Deletes one or more files.
+EXIT           Quits the CMD.EXE program (command interpreter).
+FC             Compares two files or sets of files, and displays the
+               differences between them.
+FIND           Searches for a text string in a file or files.
+FINDSTR        Searches for strings in files.
+FOR            Runs a specified command for each file in a set of files.
+FORMAT         Formats a disk for use with Windows.
+FSUTIL         Displays or configures the file system properties.
+FTYPE          Displays or modifies file types used in file extension
+               associations.
+GOTO           Directs the Windows command interpreter to a labeled line in
+               a batch program.
+GPRESULT       Displays Group Policy information for machine or user.
+GRAFTABL       Enables Windows to display an extended character set in
+               graphics mode.
+HELP           Provides Help information for Windows commands.
+ICACLS         Display, modify, backup, or restore ACLs for files and
+               directories.
+IF             Performs conditional processing in batch programs.
+LABEL          Creates, changes, or deletes the volume label of a disk.
+MD             Creates a directory.
+MKDIR          Creates a directory.
+MKLINK         Creates Symbolic Links and Hard Links
+MODE           Configures a system device.
+MORE           Displays output one screen at a time.
+MOVE           Moves one or more files from one directory to another
+               directory.
+OPENFILES      Displays files opened by remote users for a file share.
+PATH           Displays or sets a search path for executable files.
+PAUSE          Suspends processing of a batch file and displays a message.
+POPD           Restores the previous value of the current directory saved by
+               PUSHD.
+PRINT          Prints a text file.
+PROMPT         Changes the Windows command prompt.
+PUSHD          Saves the current directory then changes it.
+RD             Removes a directory.
+RECOVER        Recovers readable information from a bad or defective disk.
+REM            Records comments (remarks) in batch files or CONFIG.SYS.
+REN            Renames a file or files.
+RENAME         Renames a file or files.
+REPLACE        Replaces files.
+RMDIR          Removes a directory.
+ROBOCOPY       Advanced utility to copy files and directory trees
+SET            Displays, sets, or removes Windows environment variables.
+SETLOCAL       Begins localization of environment changes in a batch file.
+SC             Displays or configures services (background processes).
+SCHTASKS       Schedules commands and programs to run on a computer.
+SHIFT          Shifts the position of replaceable parameters in batch files.
+SHUTDOWN       Allows proper local or remote shutdown of machine.
+SORT           Sorts input.
+START          Starts a separate window to run a specified program or command.
+SUBST          Associates a path with a drive letter.
+SYSTEMINFO     Displays machine specific properties and configuration.
+TASKLIST       Displays all currently running tasks including services.
+TASKKILL       Kill or stop a running process or application.
+TIME           Displays or sets the system time.
+TITLE          Sets the window title for a CMD.EXE session.
+TREE           Graphically displays the directory structure of a drive or
+               path.
+TYPE           Displays the contents of a text file.
+VER            Displays the Windows version.
+VERIFY         Tells Windows whether to verify that your files are written
+               correctly to a disk.
+VOL            Displays a disk volume label and serial number.
+XCOPY          Copies files and directory trees.
+WMIC           Displays WMI information inside interactive command shell.
+
+For more information on tools see the command-line reference in the online help.
+
+
+================
+13.C:\Users\semuthitam>cmd
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+
+================
+14. C:\Users\semuthitam>time
+The current time is: 15:41:13.90
+Enter the new time:
+
+================
+15. C:\Users\semuthitam>vol
+ Volume in drive C has no label.
+ Volume Serial Number is 4E5D-57D4
+
+
+================
+16. C:\Users\semuthitam>ver
+
+Microsoft Windows [Version 6.1.7601]
+
+
+================
+17. C:\Users\semuthitam>tasklist
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0         24 K
+System                           4 Services                   0      1,184 K
+smss.exe                       400 Services                   0        500 K
+csrss.exe                      628 Services                   0      1,768 K
+wininit.exe                    756 Services                   0      1,192 K
+csrss.exe                      764 Console                    1     10,096 K
+winlogon.exe                   816 Console                    1      1,944 K
+services.exe                   852 Services                   0      4,576 K
+lsass.exe                      876 Services                   0      5,612 K
+lsm.exe                        884 Services                   0      1,944 K
+svchost.exe                    976 Services                   0      3,780 K
+ibmpmsvc.exe                   420 Services                   0        560 K
+nvvsvc.exe                     644 Services                   0      1,148 K
+svchost.exe                    684 Services                   0      4,928 K
+svchost.exe                   1040 Services                   0      9,892 K
+svchost.exe                   1088 Services                   0      7,400 K
+svchost.exe                   1112 Services                   0     16,832 K
+svchost.exe                   1276 Services                   0      5,964 K
+svchost.exe                   1360 Services                   0      8,504 K
+nvxdsync.exe                  1480 Console                    1      4,840 K
+nvvsvc.exe                    1492 Console                    1      1,416 K
+wlanext.exe                   1508 Services                   0      1,788 K
+conhost.exe                   1516 Services                   0        628 K
+taskeng.exe                   1660 Services                   0      2,580 K
+spoolsv.exe                   1672 Services                   0      3,100 K
+svchost.exe                   1772 Services                   0      3,340 K
+taskhost.exe                  1832 Console                    1      5,064 K
+dwm.exe                       1924 Console                    1      1,004 K
+powershell.exe                1932 Services                   0      6,056 K
+conhost.exe                   1948 Services                   0        620 K
+explorer.exe                  1996 Console                    1     51,644 K
+FCUpdateService.exe           1060 Services                   0        868 K
+sqlwriter.exe                 2128 Services                   0      1,028 K
+svchost.exe                   2180 Services                   0        932 K
+UltraViewer_Service.exe       2212 Services                   0      1,864 K
+StikyNot.exe                  2300 Console                    1      2,736 K
+SearchIndexer.exe             2660 Services                   0     20,908 K
+svchost.exe                   2732 Services                   0      2,092 K
+svchost.exe                   2756 Services                   0        956 K
+nvtray.exe                    2876 Console                    1      6,292 K
+chrome.exe                    2200 Services                   0        396 K
+conhost.exe                   2400 Services                   0      1,012 K
+taskhost.exe                  3776 Console                    1        792 K
+svchost.exe                   4028 Services                   0      2,760 K
+daemonu.exe                   3204 Services                   0      6,812 K
+chrome.exe                    3656 Console                    1    169,340 K
+chrome.exe                    2016 Console                    1      2,544 K
+chrome.exe                    3772 Console                    1     57,840 K
+chrome.exe                    3592 Console                    1     27,088 K
+chrome.exe                    2632 Console                    1      7,424 K
+chrome.exe                    3872 Console                    1     59,652 K
+chrome.exe                    3288 Console                    1     32,632 K
+chrome.exe                    3964 Console                    1     35,520 K
+chrome.exe                    4012 Console                    1     25,008 K
+chrome.exe                    4216 Console                    1      3,972 K
+chrome.exe                    5020 Console                    1    120,196 K
+chrome.exe                    4428 Console                    1    104,088 K
+notepad.exe                   3480 Console                    1      6,152 K
+chrome.exe                    1208 Console                    1    105,712 K
+chrome.exe                     688 Console                    1    143,908 K
+chrome.exe                    1900 Console                    1     86,076 K
+msinfo32.exe                  3764 Console                    1      9,808 K
+WmiPrvSE.exe                  3248 Services                   0      6,520 K
+cmd.exe                       3020 Console                    1      3,708 K
+conhost.exe                   4196 Console                    1      4,952 K
+tasklist.exe                  1304 Console                    1      6,164 K
+WmiPrvSE.exe                  3488 Services                   0      6,716 K
+
+================
+18. C:\Users\semuthitam>systeminfo
+
+Host Name:                 SEMUTHITAM-PC
+OS Name:                   Microsoft Windows 7 Ultimate
+OS Version:                6.1.7601 Service Pack 1 Build 7601
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          semuthitam
+Registered Organization:
+Product ID:                00426-OEM-8992662-00537
+Original Install Date:     6/27/2020, 2:17:13 PM
+System Boot Time:          1/23/2021, 2:31:03 PM
+System Manufacturer:       LENOVO
+System Model:              20207
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 58 Stepping 9 GenuineInt
+el ~2400 Mhz
+BIOS Version:              LENOVO H1ET40WW (1.13 ), 9/6/2012
+Windows Directory:         C:\Windows
+System Directory:          C:\Windows\system32
+Boot Device:               \Device\HarddiskVolume2
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC+07:00) Bangkok, Hanoi, Jakarta
+Total Physical Memory:     1,806 MB
+Available Physical Memory: 575 MB
+Virtual Memory: Max Size:  5,535 MB
+Virtual Memory: Available: 1,042 MB
+Virtual Memory: In Use:    4,493 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\SEMUTHITAM-PC
+Hotfix(s):                 4 Hotfix(s) Installed.
+                           [01]: KB2664825
+                           [02]: KB2685811
+                           [03]: KB2999226
+                           [04]: KB976902
+Network Card(s):           3 NIC(s) Installed.
+                           [01]: Realtek PCIe GBE Family Controller
+                                 Connection Name: Local Area Connection
+                                 Status:          Media disconnected
+                           [02]: 1x1 11b/g/n Wireless LAN PCI Express Half Mini
+Card Adapter
+                                 Connection Name: Wireless Network Connection
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     192.168.43.1
+                                 IP address(es)
+                                 [01]: 192.168.43.244
+                                 [02]: fe80::f8bf:4896:c856:512b
+                           [03]: Bluetooth Device (Personal Area Network)
+                                 Connection Name: Bluetooth Network Connection
+                                 Status:          Media disconnected
+
+================
+19. C:\Users\semuthitam>echo
+ECHO is on.
+
+
+================
+20. C:\Users\semuthitam>attrib
+A   H        C:\Users\semuthitam\.codota-id
+A            C:\Users\semuthitam\d4ac4633ebd6440fa397b84f1bc94a3c.7z
+A            C:\Users\semuthitam\inittk.ini
+A            C:\Users\semuthitam\inst.ini
+A            C:\Users\semuthitam\ipconfig
+A            C:\Users\semuthitam\net
+A  SH   I    C:\Users\semuthitam\NTUSER.DAT
+A  SH        C:\Users\semuthitam\ntuser.dat.LOG1
+A  SH        C:\Users\semuthitam\ntuser.dat.LOG2
+A  SH        C:\Users\semuthitam\NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec
+}.TM.blf
+A  SH        C:\Users\semuthitam\NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec
+}.TMContainer00000000000000000001.regtrans-ms
+A  SH        C:\Users\semuthitam\NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec
+}.TMContainer00000000000000000002.regtrans-ms
+   SH        C:\Users\semuthitam\ntuser.ini
+A            C:\Users\semuthitam\nuuid.ini
+A            C:\Users\semuthitam\useruid.ini
